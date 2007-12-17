@@ -37,7 +37,6 @@ BuildRequires:	unison
 Requires:	quota
 BuildRequires:	quota
 %endif
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 "scponly" is an alternative 'shell' (of sorts) for system
