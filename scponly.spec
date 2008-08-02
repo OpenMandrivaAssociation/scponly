@@ -10,7 +10,7 @@
 Summary:	Connection shell to allow only scp/sftp/rsync/svn
 Name:		scponly
 Version:	4.6
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	BSD
 Group:		Networking/Remote access
 URL:		http://sublimation.org/scponly/
