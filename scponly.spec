@@ -9,14 +9,13 @@
 
 Summary:	Connection shell to allow only scp/sftp/rsync/svn
 Name:		scponly
-Version:	4.6
-Release:	%mkrel 8
+Version:	4.8
+Release:	%mkrel 1
 License:	BSD
 Group:		Networking/Remote access
 URL:		http://sublimation.org/scponly/
 Source0:	http://www.sublimation.org/scponly/%{name}-%{version}.tar.bz2
-Patch0:		scponly.c.diff
-Patch1:		scponly.h.diff
+Patch0:		scponly-install.patch
 Requires(post):	rpm-helper >= 0.7
 Requires(postun): rpm-helper >= 0.7
 Requires:	openssh-server
@@ -56,7 +55,6 @@ This package have some configurable build options:
 
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 # temporary permission fix
