@@ -16,6 +16,7 @@ Group:		Networking/Remote access
 URL:		http://sublimation.org/scponly/
 Source0:	http://www.sublimation.org/scponly/%{name}-%{version}.tar.bz2
 Patch0:		scponly-install.patch
+Patch1:		scponly-4.8-elif-gcc44.patch
 Requires(post):	rpm-helper >= 0.7
 Requires(postun): rpm-helper >= 0.7
 Requires:	openssh-server
@@ -55,6 +56,7 @@ This package have some configurable build options:
 
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 # temporary permission fix
