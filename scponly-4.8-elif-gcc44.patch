@@ -1,0 +1,12 @@
+diff -urN scponly-4.8.orig/helper.c scponly-4.8/helper.c
+--- scponly-4.8.orig/helper.c	2008-01-15 01:26:13.000000000 -0500
++++ scponly-4.8/helper.c	2009-02-27 13:53:27.000000000 -0500
+@@ -230,7 +230,7 @@
+ 						return 1;
+ 					}
+ 				}
+-#elif
++#else
+ 				/*
+ 				 * make sure that processing doesn't continue if we can't validate a rsync check
+ 				 * and if the getopt flag is set.
