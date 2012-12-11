@@ -121,3 +121,80 @@ rm -rf %buildroot
 %dir %{_datadir}/%{name}-%{version}
 %{_datadir}/%{name}-%{version}/*
 
+
+
+%changelog
+* Mon Oct 05 2009 Oden Eriksson <oeriksson@mandriva.com> 4.8-3mdv2010.0
++ Revision: 454045
+- P1: fix build (fedora)
+- rebuild
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - rebuild
+
+* Fri Jan 23 2009 Jérôme Soyer <saispo@mandriva.org> 4.8-1mdv2009.1
++ Revision: 333010
+- New upstream release
+
+* Sat Aug 02 2008 Thierry Vignaud <tvignaud@mandriva.com> 4.6-8mdv2009.0
++ Revision: 260566
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tvignaud@mandriva.com> 4.6-7mdv2009.0
++ Revision: 252178
+- rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 4.6-5mdv2008.1
++ Revision: 140776
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Sat Aug 12 2006 Oden Eriksson <oeriksson@mandriva.com> 4.6-5mdv2007.0
+- fix a silly bug
+
+* Sat Aug 12 2006 Oden Eriksson <oeriksson@mandriva.com> 4.6-4mdv2007.0
+- added two debian patches
+
+* Wed Apr 12 2006 Oden Eriksson <oeriksson@mandrakesoft.com> 4.6-3mdk
+- fix build on x86_64
+
+* Tue Feb 07 2006 Tibor Pittich <Tibor.Pittich@mandriva.org> 4.6-2mdk
+- add more compatibilities by default
+- add configurable option for unison and quota
+- add config.h into package
+
+* Mon Feb 06 2006 Tibor Pittich <Tibor.Pittich@mandriva.org> 4.6-1mdk
+- 4.6
+
+* Fri Oct 21 2005 Tibor Pittich <Tibor.Pittich@mandriva.org> 4.1-2mdk
+- put back BuildRequires, use switches to enable features
+- disable default support for rsync
+- add docs
+- add setup_chroot.sh and hacked group command into package
+- add optional compatibility with svn client and server, improve summary
+
+* Thu Oct 20 2005 Tibor Pittich <Tibor.Pittich@mandriva.org> 4.1-1mdk
+- 4.1
+- remove BuildRequires, just openssh-server is required
+- fixed PreReq
+
+* Thu May 05 2005 Per Øyvind Karlsen <pkarlsen@mandriva.com> 4.0-2mdk
+- lib64 fix
+- %%mkrel
+
+* Thu Jan 13 2005 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 4.0-1mdk
+- 4.0
+
+* Mon Jul 26 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 3.11-1mdk
+- 3.11
+- cosmetics
+
+* Sat May 08 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 3.9-1mdk
+- 3.9
+
+* Thu Oct 02 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 3.8-1mdk
+- 3.8
+
