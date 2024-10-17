@@ -13,7 +13,7 @@ Version:	4.8
 Release:	4
 License:	BSD
 Group:		Networking/Remote access
-URL:		http://sublimation.org/scponly/
+URL:		https://sublimation.org/scponly/
 Source0:	http://www.sublimation.org/scponly/%{name}-%{version}.tar.bz2
 Patch0:		scponly-install.patch
 Patch1:		scponly-4.8-elif-gcc44.patch
